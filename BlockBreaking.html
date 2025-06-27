@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href=BlockBreaking.css>
+  <script type="text/javascript" src="BlockBreaking.js"></script>
+  <title>ブロック崩し</title>
+</head>
+<body onLoad="mainPanelStart()">
+  <h1>ブロック崩し</h1>
+  <canvas id=mainPanel class=mainPanel></canvas><br><br>
+  <BUTTON ID="method" onClick="gameDC()">遊び方</BUTTON>
+	<BUTTON ID="start" onClick="gameStart()">ゲーム開始</BUTTON>
+	<BUTTON ID="res" onClick="gameready(1)">もう一度遊ぶ</BUTTON>
+  <BUTTON ID="restart" onClick="gameready(0)">最初に戻る</BUTTON><br><br>
+  <nobr>難易度[1~10]</nobr>
+  <input  type="number" id="difficulty" value=7 max=10 min=1>
+</body>
+</html>
